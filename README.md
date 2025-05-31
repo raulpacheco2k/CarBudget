@@ -2,6 +2,8 @@
 
 CarBudget é uma aplicação web projetada para auxiliar no planejamento financeiro da compra de um veículo. Ele oferece ferramentas para simular custos, analisar despesas e organizar o orçamento de forma eficaz.
 
+![](/docs/images/preview.png)
+
 # ✨ Funcionalidades Principais
 
 *   **Simulação de Orçamento:** Calcule os custos totais envolvidos na compra e manutenção de um carro.
