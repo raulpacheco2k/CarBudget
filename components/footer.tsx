@@ -92,6 +92,7 @@ export function Footer() {
                 raulpacheco2k
               </Link>
             </span>
+            .
           </p>
         </div>
       </div>

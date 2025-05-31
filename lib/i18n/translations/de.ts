@@ -37,6 +37,7 @@ export const de = {
     percent: "Prozentsatz",
     fixed: "Fest",
     addExpense: "Ausgabe Hinzufügen",
+    removeAllExpenses: "Felder löschen",
     results: "Ergebnisse",
     maxPrice: "Maximaler Autopreis",
     monthlyPayment: "Monatliche Rate",
