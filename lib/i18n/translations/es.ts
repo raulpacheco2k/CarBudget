@@ -5,38 +5,38 @@ export const es = {
     advantages: "Ventajas",
     testimonials: "Testimonios",
     contact: "Contacto",
-    simulateNow: "Simular Ahora",
+    simulateNow: "Simular ahora",
     calculate: "Calcular",
-    add: "Añadir",
+    add: "Agregar",
     remove: "Eliminar",
   },
   hero: {
-    title: "Inteligencia Financiera para la Compra de tu Coche",
+    title: "Inteligencia financiera para comprar tu coche",
     subtitle:
       "Descubre cuánto puedes gastar en un coche sin comprometer tu presupuesto. Simula todos los costos y toma decisiones financieras inteligentes.",
   },
   calculator: {
-    title: "Calculadora de Presupuesto Inteligente",
-    subtitle: "Descubre el precio máximo del coche y la cuota mensual que cabe en tu presupuesto",
-    financingData: "Datos de Financiación",
-    financingDataTooltip: "Introduce los datos básicos de financiación para calcular el precio máximo del coche",
-    downPayment: "Entrada",
-    downPaymentTooltip: "Cantidad que tienes disponible para la entrada del vehículo",
+    title: "Calculadora de presupuesto inteligente",
+    subtitle: "Descubre el precio máximo del coche y la cuota que cabe en tu presupuesto",
+    financingData: "Datos del financiamiento",
+    financingDataTooltip: "Introduce los datos básicos del financiamiento para calcular el precio máximo del coche",
+    downPayment: "Pago inicial",
+    downPaymentTooltip: "Importe disponible para el pago inicial del vehículo",
     monthlyRate: "Tasa mensual (%)",
-    monthlyRateTooltip: "Tasa de interés mensual de la financiación",
+    monthlyRateTooltip: "Tasa de interés mensual del financiamiento",
     term: "Plazo (meses)",
-    termTooltip: "Duración de la financiación en meses",
-    annualLimit: "Límite de gastos anuales con el coche",
-    annualLimitTooltip: "Cantidad máxima que deseas gastar anualmente en tu coche (cuotas + gastos)",
+    termTooltip: "Duración del financiamiento en meses",
+    annualLimit: "Límite de gasto anual en el coche",
+    annualLimitTooltip: "Importe máximo que deseas gastar anualmente en el coche (cuotas + gastos)",
     additionalExpenses: "Gastos anuales adicionales",
     additionalExpensesTooltip:
-      "Añade todos los gastos extras con tu coche, como impuestos, seguro, mantenimiento, combustible, etc.",
+      "Añade todos los gastos extra del coche, como impuestos, seguro, mantenimiento, combustible, etc.",
     expenseName: "Nombre",
     expenseType: "Tipo",
     expenseValue: "Valor",
     percent: "Porcentaje",
     fixed: "Fijo",
-    addExpense: "Añadir Gasto",
+    addExpense: "Agregar gasto",
     removeAllExpenses: "Eliminar campos",
     results: "Resultados",
     maxPrice: "Precio máximo del coche",
@@ -45,57 +45,57 @@ export const es = {
     currencyTooltip: "Selecciona la moneda para los cálculos",
   },
   features: {
-    title: "Por Qué Usar Nuestra Calculadora",
+    title: "Por qué usar nuestra calculadora",
     subtitle:
       "Descubre cómo nuestra herramienta de inteligencia financiera puede ayudarte a tomar decisiones más conscientes",
     realisticBudget: {
-      title: "Presupuesto Realista",
+      title: "Presupuesto realista",
       subtitle: "Considera todos los costos reales de tener un coche, no solo la cuota",
       description:
-        "Nuestra calculadora incluye todos los gastos con tu vehículo: impuestos, seguro, mantenimiento, combustible y otros costos que a menudo se olvidan en la planificación.",
+        "Nuestra calculadora incluye todos los gastos de tu vehículo: impuestos, seguro, mantenimiento, combustible y otros costos que a menudo se olvidan en la planificación.",
     },
     financialHealth: {
-      title: "Salud Financiera",
+      title: "Salud financiera",
       subtitle: "No comprometas más de lo que puedes pagar",
       description:
-        "Establece un límite anual para los gastos del coche y descubre exactamente cuánto puedes invertir sin comprometer tu presupuesto y calidad de vida.",
+        "Define un límite anual de gasto en tu coche y descubre exactamente cuánto puedes invertir sin comprometer tu presupuesto y calidad de vida.",
     },
     smartSimulations: {
-      title: "Simulaciones Inteligentes",
+      title: "Simulaciones inteligentes",
       subtitle: "Compara diferentes escenarios para tomar la mejor decisión",
       description:
-        "Prueba diferentes valores de entrada, tasas y plazos para encontrar la combinación ideal que se ajuste a tu planificación financiera a largo plazo.",
+        "Prueba distintos valores de entrada, tasas y plazos para encontrar la combinación ideal que encaje en tu planificación financiera a largo plazo.",
     },
     debtProtection: {
-      title: "Protección Contra Endeudamiento",
-      subtitle: "Evita sorpresas desagradables y deudas no deseadas",
+      title: "Protección contra endeudamiento",
+      subtitle: "Evita sorpresas desagradables y deudas indeseadas",
       description:
-        "Al considerar todos los costos involucrados, evitas el endeudamiento excesivo y garantizas que tendrás recursos para otras prioridades y emergencias.",
+        "Al considerar todos los costos involucrados, evitas un endeudamiento excesivo y aseguras que tendrás recursos para otras prioridades y emergencias.",
     },
     negotiationPower: {
-      title: "Poder de Negociación",
+      title: "Poder de negociación",
       subtitle: "Sabe exactamente cuánto puedes pagar antes de negociar",
       description:
-        "Entra en el concesionario sabiendo exactamente el valor máximo que puedes pagar, fortaleciendo tu posición en la negociación y evitando decisiones emocionales.",
+        "Entra al concesionario sabiendo el valor máximo que puedes pagar, fortaleciendo tu posición y evitando decisiones emocionales.",
     },
     consciousDecisions: {
-      title: "Decisiones Conscientes",
+      title: "Decisiones conscientes",
       subtitle: "Compra tu coche con tranquilidad y seguridad",
       description:
-        "Toma decisiones basadas en datos reales, no en emociones o presión de ventas, asegurando que tu compra sea financieramente sostenible a largo plazo.",
+        "Toma decisiones basadas en datos reales, no en emociones o presión de ventas, garantizando que tu compra sea financieramente sostenible a largo plazo.",
     },
   },
   page: {
-    planTitle: "Planifica tus Gastos con Inteligencia",
+    planTitle: "Planifica tus gastos con inteligencia",
     planSubtitle:
-      "Simula todos los costos involucrados en la compra de un coche y descubre cuánto puedes gastar sin comprometer tu presupuesto",
+      "Simula todos los costos de la compra de un coche y descubre cuánto puedes gastar sin comprometer tu presupuesto",
   },
   testimonials: {
-    title: "Historias de Éxito",
+    title: "Historias de éxito",
     subtitle: "Mira cómo nuestra calculadora ayudó a otras personas a tomar decisiones financieras inteligentes",
   },
   footer: {
-    quickLinks: "Enlaces Rápidos",
+    quickLinks: "Enlaces rápidos",
     contact: "Contacto",
     allRightsReserved: "Todos los derechos reservados",
     createdWith: "Creado con ❤️ por",
@@ -108,4 +108,4 @@ export const es = {
     EUR: "Euro (€)",
     ARS: "Peso Argentino ($)",
   },
-}
+};

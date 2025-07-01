@@ -11,12 +11,12 @@ export const pt = {
     remove: "Remover",
   },
   hero: {
-    title: "Inteligência Financeira para Sua Compra de Carro",
+    title: "Inteligência financeira para comprar seu carro",
     subtitle:
       "Descubra quanto você pode gastar em um carro sem comprometer seu orçamento. Simule todos os custos e tome decisões financeiras inteligentes.",
   },
   calculator: {
-    title: "Calculadora de Orçamento Inteligente",
+    title: "Calculadora de orçamento inteligente",
     subtitle: "Descubra o preço máximo do carro e o valor da parcela que cabe no seu orçamento",
     financingData: "Dados do financiamento",
     financingDataTooltip: "Informe os dados básicos do financiamento para calcular o valor máximo do carro",
@@ -45,48 +45,48 @@ export const pt = {
     currencyTooltip: "Selecione a moeda para os cálculos",
   },
   features: {
-    title: "Por Que Usar Nossa Calculadora",
+    title: "Por que usar nossa calculadora",
     subtitle:
       "Descubra como nossa ferramenta de inteligência financeira pode ajudar você a tomar decisões mais conscientes",
     realisticBudget: {
-      title: "Orçamento Realista",
+      title: "Orçamento realista",
       subtitle: "Considere todos os custos reais de ter um carro, não apenas a parcela",
       description:
         "Nossa calculadora inclui todos os gastos com seu veículo: IPVA, seguro, manutenção, combustível e outros custos que muitas vezes são esquecidos no planejamento.",
     },
     financialHealth: {
-      title: "Saúde Financeira",
+      title: "Saúde financeira",
       subtitle: "Não comprometa mais do que você pode pagar",
       description:
         "Defina um limite anual de gastos com seu carro e descubra exatamente quanto você pode investir sem comprometer seu orçamento e qualidade de vida.",
     },
     smartSimulations: {
-      title: "Simulações Inteligentes",
+      title: "Simulações inteligentes",
       subtitle: "Compare diferentes cenários para tomar a melhor decisão",
       description:
         "Experimente diferentes valores de entrada, taxas e prazos para encontrar a combinação ideal que se encaixa no seu planejamento financeiro de longo prazo.",
     },
     debtProtection: {
-      title: "Proteção Contra Endividamento",
+      title: "Proteção contra endividamento",
       subtitle: "Evite surpresas desagradáveis e dívidas indesejadas",
       description:
         "Ao considerar todos os custos envolvidos, você evita o endividamento excessivo e garante que terá recursos para outras prioridades e emergências.",
     },
     negotiationPower: {
-      title: "Poder de Negociação",
+      title: "Poder de negociação",
       subtitle: "Saiba exatamente quanto pode pagar antes de negociar",
       description:
         "Entre na concessionária sabendo exatamente o valor máximo que pode pagar, fortalecendo sua posição na negociação e evitando decisões emocionais.",
     },
     consciousDecisions: {
-      title: "Decisões Conscientes",
+      title: "Decisões conscientes",
       subtitle: "Compre seu carro com tranquilidade e segurança",
       description:
         "Tome decisões baseadas em dados reais, não em emoções ou pressão de vendas, garantindo que sua compra seja sustentável financeiramente a longo prazo.",
     },
   },
   page: {
-    planTitle: "Planeje Seus Gastos com Inteligência",
+    planTitle: "Planeje seus gastos com inteligência",
     planSubtitle:
       "Simule todos os custos envolvidos na compra de um carro e descubra quanto você pode gastar sem comprometer seu orçamento",
   },
@@ -95,7 +95,7 @@ export const pt = {
     subtitle: "Veja como nossa calculadora ajudou outras pessoas a tomarem decisões financeiras inteligentes",
   },
   footer: {
-    quickLinks: "Links Rápidos",
+    quickLinks: "Links rápidos",
     contact: "Contato",
     allRightsReserved: "Todos os direitos reservados",
     createdWith: "Criado com ❤️ por",

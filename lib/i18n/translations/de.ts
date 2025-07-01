@@ -5,94 +5,94 @@ export const de = {
     advantages: "Vorteile",
     testimonials: "Erfahrungsberichte",
     contact: "Kontakt",
-    simulateNow: "Jetzt Simulieren",
+    simulateNow: "Jetzt simulieren",
     calculate: "Berechnen",
     add: "Hinzufügen",
     remove: "Entfernen",
   },
   hero: {
-    title: "Finanzielle Intelligenz für Ihren Autokauf",
+    title: "Finanzielle Intelligenz für den Autokauf",
     subtitle:
-      "Entdecken Sie, wie viel Sie für ein Auto ausgeben können, ohne Ihr Budget zu belasten. Simulieren Sie alle Kosten und treffen Sie intelligente finanzielle Entscheidungen.",
+      "Ermitteln Sie, wie viel Sie für ein Auto ausgeben können, ohne Ihr Budget zu belasten. Simulieren Sie alle Kosten und treffen Sie fundierte Finanzentscheidungen.",
   },
   calculator: {
-    title: "Intelligenter Budgetrechner",
-    subtitle: "Entdecken Sie den maximalen Autopreis und die monatliche Rate, die in Ihr Budget passt",
+    title: "Intelligenter Budget-Rechner",
+    subtitle: "Ermitteln Sie den maximalen Fahrzeugpreis und die Rate, die in Ihr Budget passt",
     financingData: "Finanzierungsdaten",
-    financingDataTooltip: "Geben Sie die grundlegenden Finanzierungsdaten ein, um den maximalen Autopreis zu berechnen",
+    financingDataTooltip: "Geben Sie die grundlegenden Finanzierungsdaten ein, um den maximalen Fahrzeugwert zu berechnen",
     downPayment: "Anzahlung",
-    downPaymentTooltip: "Betrag, den Sie für die Anzahlung des Fahrzeugs zur Verfügung haben",
+    downPaymentTooltip: "Betrag, den Sie als Anzahlung für das Fahrzeug bereitstellen können",
     monthlyRate: "Monatlicher Zinssatz (%)",
-    monthlyRateTooltip: "Monatlicher Zinssatz für die Finanzierung",
+    monthlyRateTooltip: "Monatlicher Zinssatz der Finanzierung",
     term: "Laufzeit (Monate)",
     termTooltip: "Dauer der Finanzierung in Monaten",
-    annualLimit: "Jährliches Ausgabenlimit für das Auto",
-    annualLimitTooltip: "Maximaler Betrag, den Sie jährlich für Ihr Auto ausgeben möchten (Zahlungen + Ausgaben)",
+    annualLimit: "Jährliches Ausgabenlimit fürs Auto",
+    annualLimitTooltip: "Maximalbetrag, den Sie jährlich für Autokosten (Raten + Ausgaben) ausgeben möchten",
     additionalExpenses: "Zusätzliche jährliche Ausgaben",
     additionalExpensesTooltip:
-      "Fügen Sie alle zusätzlichen Ausgaben für Ihr Auto hinzu, wie Steuern, Versicherung, Wartung, Kraftstoff usw.",
+      "Fügen Sie alle Zusatzkosten für das Auto hinzu, z. B. Kfz-Steuer, Versicherung, Wartung, Kraftstoff usw.",
     expenseName: "Name",
-    expenseType: "Typ",
-    expenseValue: "Wert",
+    expenseType: "Art",
+    expenseValue: "Betrag",
     percent: "Prozentsatz",
-    fixed: "Fest",
-    addExpense: "Ausgabe Hinzufügen",
+    fixed: "Festbetrag",
+    addExpense: "Ausgabe hinzufügen",
     removeAllExpenses: "Felder löschen",
     results: "Ergebnisse",
-    maxPrice: "Maximaler Autopreis",
+    maxPrice: "Maximaler Fahrzeugpreis",
     monthlyPayment: "Monatliche Rate",
     currency: "Währung",
     currencyTooltip: "Wählen Sie die Währung für die Berechnungen",
   },
   features: {
-    title: "Warum Unseren Rechner Verwenden",
-    subtitle: "Entdecken Sie, wie unser Finanzintelligenz-Tool Ihnen helfen kann, bewusstere Entscheidungen zu treffen",
+    title: "Warum unser Rechner",
+    subtitle: "Entdecken Sie, wie unser Tool Ihnen hilft, bewusster zu entscheiden",
     realisticBudget: {
       title: "Realistisches Budget",
-      subtitle: "Berücksichtigen Sie alle tatsächlichen Kosten eines Autos, nicht nur die Rate",
+      subtitle: "Berücksichtigen Sie alle tatsächlichen Kosten für ein Auto, nicht nur die Rate",
       description:
-        "Unser Rechner berücksichtigt alle Ausgaben für Ihr Fahrzeug: Steuern, Versicherung, Wartung, Kraftstoff und andere Kosten, die bei der Planung oft vergessen werden.",
+        "Unser Rechner umfasst alle Fahrzeugkosten: Kfz-Steuer, Versicherung, Wartung, Kraftstoff und weitere Ausgaben, die oft übersehen werden.",
     },
     financialHealth: {
       title: "Finanzielle Gesundheit",
-      subtitle: "Verpflichten Sie sich nicht zu mehr, als Sie bezahlen können",
+      subtitle: "Belasten Sie Ihr Budget nicht übermäßig",
       description:
-        "Legen Sie ein jährliches Limit für Autoausgaben fest und entdecken Sie genau, wie viel Sie investieren können, ohne Ihr Budget und Ihre Lebensqualität zu beeinträchtigen.",
+        "Legen Sie ein jährliches Ausgabenlimit fest und erfahren Sie genau, wie viel Sie investieren können, ohne Ihre Lebensqualität zu beeinträchtigen.",
     },
     smartSimulations: {
       title: "Intelligente Simulationen",
-      subtitle: "Vergleichen Sie verschiedene Szenarien, um die beste Entscheidung zu treffen",
+      subtitle: "Vergleichen Sie Szenarien für die beste Entscheidung",
       description:
-        "Probieren Sie verschiedene Anzahlungswerte, Zinssätze und Laufzeiten aus, um die ideale Kombination zu finden, die zu Ihrer langfristigen Finanzplanung passt.",
+        "Probieren Sie verschiedene Anzahlungshöhen, Zinssätze und Laufzeiten, um die ideale Kombination für Ihre langfristige Planung zu finden.",
     },
     debtProtection: {
       title: "Schutz vor Überschuldung",
-      subtitle: "Vermeiden Sie unangenehme Überraschungen und unerwünschte Schulden",
+      subtitle: "Vermeiden Sie unangenehme Überraschungen",
       description:
-        "Indem Sie alle anfallenden Kosten berücksichtigen, vermeiden Sie übermäßige Verschuldung und stellen sicher, dass Sie Ressourcen für andere Prioritäten und Notfälle haben.",
+        "Indem Sie alle Kosten berücksichtigen, verhindern Sie übermäßige Verschuldung und behalten Mittel für andere Prioritäten und Notfälle.",
     },
     negotiationPower: {
       title: "Verhandlungsmacht",
-      subtitle: "Wissen Sie genau, wie viel Sie bezahlen können, bevor Sie verhandeln",
+      subtitle: "Kennen Sie Ihren maximalen Preis, bevor Sie verhandeln",
       description:
-        "Betreten Sie den Autohändler mit dem Wissen, wie viel Sie maximal bezahlen können, stärken Sie Ihre Position bei der Verhandlung und vermeiden Sie emotionale Entscheidungen.",
+        "Treten Sie beim Händler auf, gut vorbereitet mit Ihrem Höchstbudget, und vermeiden Sie emotionale Entscheidungen.",
     },
     consciousDecisions: {
       title: "Bewusste Entscheidungen",
-      subtitle: "Kaufen Sie Ihr Auto mit Ruhe und Sicherheit",
+      subtitle: "Kaufen Sie sicher und sorgenfrei",
       description:
-        "Treffen Sie Entscheidungen auf der Grundlage realer Daten, nicht auf der Grundlage von Emotionen oder Verkaufsdruck, und stellen Sie sicher, dass Ihr Kauf langfristig finanziell tragfähig ist.",
+        "Treffen Sie datenbasierte Entscheidungen statt emotionaler, um langfristig finanziell nachhaltig zu bleiben.",
     },
   },
   testimonials: {
     title: "Erfolgsgeschichten",
     subtitle:
-      "Sehen Sie, wie unser Rechner anderen Menschen geholfen hat, intelligente finanzielle Entscheidungen zu treffen",
+      "Erfahren Sie, wie unser Rechner anderen zu klugen Finanzentscheidungen verholfen hat",
   },
-  page: {
-    planTitle: "Planen Sie Ihre Ausgaben mit Intelligenz",
+    page: {
+    planTitle: "Planen Sie Ihre Ausgaben intelligent",
     planSubtitle:
-      "Simulieren Sie alle Kosten beim Autokauf und entdecken Sie, wie viel Sie ausgeben können, ohne Ihr Budget zu belasten",
+      "Simulieren Sie alle Kosten beim Autokauf und erfahren Sie, wie viel Sie ausgeben können, ohne Ihr Budget zu belasten",
   },
   footer: {
     quickLinks: "Schnelllinks",
@@ -100,7 +100,7 @@ export const de = {
     allRightsReserved: "Alle Rechte vorbehalten",
     createdWith: "Erstellt mit ❤️ von",
     helpText:
-      "Wir helfen Ihnen, intelligente finanzielle Entscheidungen beim Kauf Ihres Autos zu treffen, ohne Ihr Budget zu belasten.",
+      "Wir helfen Ihnen, beim Autokauf fundierte Finanzentscheidungen zu treffen, ohne Ihr Budget zu belasten.",
   },
   currencies: {
     BRL: "Brasilianischer Real (R$)",
@@ -108,4 +108,4 @@ export const de = {
     EUR: "Euro (€)",
     ARS: "Argentinischer Peso ($)",
   },
-}
+};
