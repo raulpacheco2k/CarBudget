@@ -11,6 +11,7 @@ import {CalculatorIcon as CalcIcon, HelpCircle, Minus, Plus} from "lucide-react"
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip"
 import {useI18n} from "@/lib/i18n/context"
 import {CurrencySelector} from "./currency-selector"
+import {MoneyInput} from "./money-input"
 
 type ExpenseField = {
     id: string
@@ -263,12 +264,11 @@ export function Calculator() {
                                             </Tooltip>
                                         </TooltipProvider>
                                     </div>
-                                    <Input
+                                    <MoneyInput
                                         id="entry"
-                                        type="number"
-                                        step="0.01"
                                         value={entry}
-                                        onChange={(e) => setEntry(e.target.value)}
+                                        onChange={setEntry}
+                                        placeholder={formatNumber(0)}
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -325,12 +325,11 @@ export function Calculator() {
                                             </Tooltip>
                                         </TooltipProvider>
                                     </div>
-                                    <Input
+                                    <MoneyInput
                                         id="limit"
-                                        type="number"
-                                        step="0.01"
                                         value={limit}
-                                        onChange={(e) => setLimit(e.target.value)}
+                                        onChange={setLimit}
+                                        placeholder={formatNumber(0)}
                                     />
                                 </div>
                             </div>
@@ -402,14 +401,23 @@ export function Calculator() {
                                                                 value="fixed">{t("calculator.fixed")}</SelectItem>
                                                         </SelectContent>
                                                     </Select>
-                                                    <Input
-                                                        placeholder={t("calculator.expenseValue")}
-                                                        type="number"
-                                                        step="0.01"
-                                                        value={field.value}
-                                                        onChange={(e) => updateField(field.id, {value: e.target.value})}
-                                                        className="text-sm h-8"
-                                                    />
+                                                    {field.type === "fixed" ? (
+                                                        <MoneyInput
+                                                            value={field.value}
+                                                            onChange={(v) => updateField(field.id, {value: v})}
+                                                            placeholder={t("calculator.expenseValue")}
+                                                            className="text-sm h-8"
+                                                        />
+                                                    ) : (
+                                                        <Input
+                                                            placeholder={t("calculator.expenseValue")}
+                                                            type="number"
+                                                            step="0.01"
+                                                            value={field.value}
+                                                            onChange={(e) => updateField(field.id, {value: e.target.value})}
+                                                            className="text-sm h-8"
+                                                        />
+                                                    )}
                                                 </div>
                                             </div>
                                         ))}
