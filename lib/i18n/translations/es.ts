@@ -41,6 +41,11 @@ export const es = {
     results: "Resultados",
     maxPrice: "Precio máximo del coche",
     monthlyPayment: "Cuota mensual",
+    cashMaxPrice: "Precio máximo al contado",
+    cashMaxPriceTooltip:
+      "Valor máximo del coche si se compra al contado, sin financiamiento (cuota cero). Calculado automáticamente a partir del límite anual menos los gastos fijos, dividido por los gastos porcentuales.",
+    useAsDownPayment: "Usar como entrada",
+    unlimited: "Sin límite",
     currency: "Moneda",
     currencyTooltip: "Selecciona la moneda para los cálculos",
   },

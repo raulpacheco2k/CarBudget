@@ -26,7 +26,7 @@ export function Calculator() {
     const [term, setTerm] = useState("48")
     const [limit, setLimit] = useState("27993")
     const [fields, setFields] = useState<ExpenseField[]>([])
-    const [results, setResults] = useState({maxPrice: "", monthly: ""})
+    const [results, setResults] = useState({maxPrice: "", monthly: "", cashMaxPrice: "", cashUnlimited: false})
 
     const expenseRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
     const inputRefs = useRef<{ [key: string]: HTMLInputElement | null }>({})
@@ -191,7 +191,24 @@ export function Calculator() {
         const financed = Number.parseFloat(maxPrice) - entryValue
         const monthly = pmt(rateValue * 100, termValue, financed).toFixed(2)
 
-        setResults({maxPrice, monthly})
+        // Preço máximo à vista (parcela zero): monthly = 0 => P * sumPercent + sumFixed <= limit
+        // Logo P = (limit - sumFixed) / sumPercent. Cálculo automático para evitar
+        // que o usuário precise aumentar a entrada manualmente até zerar a parcela.
+        let cashMaxPrice = ""
+        let cashUnlimited = false
+        if (sumPercent > 0) {
+            const cashValue = (limitValue - sumFixed) / sumPercent
+            cashMaxPrice = Math.max(0, cashValue).toFixed(2)
+        } else {
+            // Sem despesas percentuais: o preço à vista não impacta o custo anual
+            if (sumFixed <= limitValue) {
+                cashUnlimited = true
+            } else {
+                cashMaxPrice = "0.00"
+            }
+        }
+
+        setResults({maxPrice, monthly, cashMaxPrice, cashUnlimited})
     }
 
     return (
@@ -433,7 +450,7 @@ export function Calculator() {
                                 <CalcIcon className="h-5 w-5 mr-2"/>
                                 {t("calculator.results")}
                             </h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div className="p-4 bg-white rounded-lg border border-teal-200 shadow-sm">
                                     <p className="text-sm text-gray-600 mb-1">{t("calculator.maxPrice")}</p>
                                     <p className="text-2xl font-bold text-teal-700">
@@ -445,6 +462,35 @@ export function Calculator() {
                                     <p className="text-2xl font-bold text-teal-700">
                                         {currency.symbol} {formatNumber(Number.parseFloat(results.monthly))}
                                     </p>
+                                </div>
+                                <div className="p-4 bg-white rounded-lg border border-teal-200 shadow-sm">
+                                    <div className="flex items-center">
+                                        <p className="text-sm text-gray-600 mb-1 mr-1">{t("calculator.cashMaxPrice")}</p>
+                                        <TooltipProvider>
+                                            <Tooltip>
+                                                <TooltipTrigger>
+                                                    <HelpCircle className="h-3.5 w-3.5 text-gray-400 mb-1"/>
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p className="max-w-xs">{t("calculator.cashMaxPriceTooltip")}</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </div>
+                                    <p className="text-2xl font-bold text-teal-700">
+                                        {results.cashUnlimited
+                                            ? t("calculator.unlimited")
+                                            : `${currency.symbol} ${formatNumber(Number.parseFloat(results.cashMaxPrice))}`}
+                                    </p>
+                                    {!results.cashUnlimited && results.cashMaxPrice && Number.parseFloat(results.cashMaxPrice) > 0 && (
+                                        <Button
+                                            variant="outline"
+                                            size="sm"
+                                            onClick={() => setEntry(results.cashMaxPrice)}
+                                            className="mt-2 text-teal-700 hover:bg-teal-50 hover:border-teal-300">
+                                            {t("calculator.useAsDownPayment")}
+                                        </Button>
+                                    )}
                                 </div>
                             </div>
                         </div>

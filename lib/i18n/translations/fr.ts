@@ -45,6 +45,11 @@ export const fr = {
     results: "Résultats",
     maxPrice: "Prix maximal de la voiture",
     monthlyPayment: "Mensualité",
+    cashMaxPrice: "Prix maximal au comptant",
+    cashMaxPriceTooltip:
+      "Valeur maximale de la voiture si achetée au comptant, sans financement (mensualité zéro). Calculée automatiquement à partir du plafond annuel moins les dépenses fixes, divisé par les dépenses en pourcentage.",
+    useAsDownPayment: "Utiliser comme apport",
+    unlimited: "Sans limite",
     currency: "Devise",
     currencyTooltip: "Sélectionnez la devise pour les calculs",
   },

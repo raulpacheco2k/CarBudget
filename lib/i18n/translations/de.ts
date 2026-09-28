@@ -41,6 +41,11 @@ export const de = {
     results: "Ergebnisse",
     maxPrice: "Maximaler Fahrzeugpreis",
     monthlyPayment: "Monatliche Rate",
+    cashMaxPrice: "Maximaler Barpreis",
+    cashMaxPriceTooltip:
+      "Maximaler Fahrzeugwert bei Barkauf ohne Finanzierung (Rate null). Wird automatisch aus dem Jahreslimit minus Fixkosten, geteilt durch prozentuale Kosten, berechnet.",
+    useAsDownPayment: "Als Anzahlung verwenden",
+    unlimited: "Kein Limit",
     currency: "Währung",
     currencyTooltip: "Wählen Sie die Währung für die Berechnungen",
   },

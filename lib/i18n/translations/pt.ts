@@ -41,6 +41,11 @@ export const pt = {
     results: "Resultados",
     maxPrice: "Preço máximo do carro",
     monthlyPayment: "Parcela mensal",
+    cashMaxPrice: "Preço máximo à vista",
+    cashMaxPriceTooltip:
+      "Valor máximo do carro se comprado à vista, sem financiamento (parcela zero). Calculado automaticamente a partir do limite anual menos as despesas fixas, dividido pelas despesas percentuais.",
+    useAsDownPayment: "Usar como entrada",
+    unlimited: "Sem limite",
     currency: "Moeda",
     currencyTooltip: "Selecione a moeda para os cálculos",
   },

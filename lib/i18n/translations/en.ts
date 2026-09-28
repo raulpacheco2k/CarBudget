@@ -41,6 +41,11 @@ export const en = {
     results: "Results",
     maxPrice: "Maximum car price",
     monthlyPayment: "Monthly payment",
+    cashMaxPrice: "Maximum cash price",
+    cashMaxPriceTooltip:
+      "Maximum car value if bought outright with no financing (zero installment). Automatically calculated from the annual limit minus fixed expenses, divided by percentage expenses.",
+    useAsDownPayment: "Use as down payment",
+    unlimited: "No limit",
     currency: "Currency",
     currencyTooltip: "Select currency for calculations",
   },
