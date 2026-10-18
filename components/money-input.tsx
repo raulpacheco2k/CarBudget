@@ -20,32 +20,36 @@ function parseLocalizedNumber(display: string, decimal: string): string {
 
   if (decimal === ",") {
     if (s.includes(",")) {
+      // Vírgula é decimal: pontos são milhares
       const parts = s.split(",")
       const dec = parts.pop() ?? ""
       const intPart = parts.join("").replace(/\./g, "")
       s = intPart + "." + dec
-    } else {
-      if (/^\d{1,3}(\.\d{3})+$/.test(s)) {
+    } else if (s.includes(".")) {
+      // Sem vírgula: ponto com mais de 2 dígitos depois = milhares (ex: 1.234, 1.2345)
+      // senão é decimal tolerado (ex: 149.37)
+      const after = s.slice(s.lastIndexOf(".") + 1)
+      if (after.length > 2) {
         s = s.replace(/\./g, "")
       } else {
-        const dotCount = (s.match(/\./g) || []).length
-        if (dotCount > 1) {
-          const parts = s.split(".")
-          const dec = parts.pop() ?? ""
-          s = parts.join("") + "." + dec
-        }
+        const parts = s.split(".")
+        const dec = parts.pop() ?? ""
+        const intPart = parts.join("").replace(/\./g, "")
+        s = intPart + "." + dec
       }
     }
   } else {
     if (s.includes(".")) {
+      // Ponto é decimal: vírgulas são milhares
       const parts = s.split(".")
       const dec = parts.pop() ?? ""
       const intPart = parts.join("").replace(/,/g, "")
       s = intPart + "." + dec
-    } else {
-      if (/^\d{1,3}(,\d{3})+$/.test(s)) {
+    } else if (s.includes(",")) {
+      const after = s.slice(s.lastIndexOf(",") + 1)
+      if (after.length > 2) {
         s = s.replace(/,/g, "")
-      } else if (s.includes(",")) {
+      } else {
         const parts = s.split(",")
         const dec = parts.pop() ?? ""
         const intPart = parts.join("")

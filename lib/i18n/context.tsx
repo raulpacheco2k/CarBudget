@@ -41,7 +41,6 @@ interface I18nContextType {
   setLanguage: (lang: Language) => void
   t: (key: string) => string
   currency: CurrencyInfo
-  setCurrency: (currency: CurrencyCode) => void
   formatCurrency: (value: number) => string
   formatNumber: (value: number, decimals?: number) => string
   getNumberFormat: () => { decimal: string; thousands: string }
@@ -51,37 +50,25 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined)
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("pt")
-  const [currency, setCurrencyState] = useState<CurrencyInfo>(currencies.BRL)
+
+  // Moeda definida automaticamente pelo idioma (país):
+  // pt (Brasil) -> BRL (R$), en -> USD, es -> ARS, fr/de -> EUR
+  const currency = currencies[languageToCurrency[language]]
 
   useEffect(() => {
-    // Load language and currency from localStorage if available
+    // Load language from localStorage if available
     const savedLanguage = localStorage.getItem("carBudgetLanguage") as Language
-    const savedCurrency = localStorage.getItem("carBudgetCurrency") as CurrencyCode
 
     if (savedLanguage && Object.keys(translations).includes(savedLanguage)) {
       setLanguage(savedLanguage)
-      // Se não houver moeda salva, definir a moeda padrão para o idioma
-      if (!savedCurrency) {
-        setCurrencyState(currencies[languageToCurrency[savedLanguage]])
-      }
     }
-
-    if (savedCurrency && currencies[savedCurrency]) {
-      setCurrencyState(currencies[savedCurrency])
-    }
+    // Remove seleção manual antiga de moeda, se existir
+    localStorage.removeItem("carBudgetCurrency")
   }, [])
-
-  const setCurrency = (currencyCode: CurrencyCode) => {
-    setCurrencyState(currencies[currencyCode])
-    localStorage.setItem("carBudgetCurrency", currencyCode)
-  }
 
   const saveLanguage = (lang: Language) => {
     setLanguage(lang)
     localStorage.setItem("carBudgetLanguage", lang)
-
-    // Atualizar a moeda automaticamente com base no idioma
-    setCurrency(languageToCurrency[lang])
   }
 
   const t = (key: string) => {
@@ -134,7 +121,6 @@ export function I18nProvider({ children }: { children: ReactNode }) {
         setLanguage: saveLanguage,
         t,
         currency,
-        setCurrency,
         formatCurrency,
         formatNumber,
         getNumberFormat,
